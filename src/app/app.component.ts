@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isAuth = false;
+  appareilOne = 'Machine à laver';
+  appareilTwo = 'Frigo';
+  appareilThree = 'Ordinateur';
+
   constructor(){
     setTimeout(
       () => {
@@ -14,4 +18,7 @@ export class AppComponent {
       },4000
     );
   }
+  onAllumer() {
+    console.log('On allume tout !');
+}
 }
